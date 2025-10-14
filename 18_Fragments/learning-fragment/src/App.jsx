@@ -1,19 +1,17 @@
-import React from "react"; 
 
 function App() {
+  let fooditems = ["Dal", "Green Vegetable", "Bread", "Milk", "Sprouts"];
 
   return (
 <>
     <h1>Healthy Food</h1>
-    <ul class="list-group">
-    <li class="list-group-item">Green Vegatable</li>
-    <li class="list-group-item">Dal</li>
-    <li class="list-group-item">Bread</li>
-    <li class="list-group-item">Milk</li>
-    <li class="list-group-item">Sprouts</li>
+    <ul className="list-group">
+    {fooditems.map((item) => (
+      <li key={item} className="List-group-item">{item}</li>
+    ))}
   </ul>
 </>
-  )
+  );
     
 }
 
