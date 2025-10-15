@@ -1,4 +1,3 @@
-
 function App() {
   let fooditems = ["Dal", "Green Vegetable", "Bread", "Milk", "Sprouts"];
 
