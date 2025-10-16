@@ -1,5 +1,12 @@
+
+
 function App() {
+  // let fooditems = [];
   let fooditems = ["Dal", "Green Vegetable", "Bread", "Milk", "Sprouts"];
+
+  if(fooditems.length === 0) {
+     return <h3>I am still hungry.</h3>
+  }
 
   return (
 <>
