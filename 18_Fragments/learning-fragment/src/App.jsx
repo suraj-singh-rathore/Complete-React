@@ -1,24 +1,18 @@
 
 
 function App() {
-  // let fooditems = [];
-  let fooditems = ["Dal", "Green Vegetable", "Bread", "Milk", "Sprouts"];
-
-  if(fooditems.length === 0) {
-     return <h3>I am still hungry.</h3>
-  }
-
   return (
-<>
-    <h1>Healthy Food</h1>
-    <ul className="list-group">
-    {fooditems.map((item) => (
-      <li key={item} className="List-group-item">{item}</li>
-    ))}
-  </ul>
-</>
+  <>
+  <h1>Healthy Food</h1>
+    <ul class="list-group">
+      <li class="list-group-item">Dal</li>
+      <li class="list-group-item">Green Vegetable</li>
+      <li class="list-group-item">Bread</li>
+      <li class="list-group-item">Milk</li>
+       <li class="list-group-item">Sprouts</li>
+     </ul>
+    </>
   );
-    
 }
 
 export default App;
