@@ -67,8 +67,32 @@
 
 // TERNARY OPERATOR:-
 
+// // function App() {
+// //   //let foodItems = [];
+// //   let foodItems = ["Dal", "Ghee", "Bread", "Milk", "Sprouts"];
+
+// //   let emptyMessage = foodItems.length === 0 ? <h3>No items are available</h3> : null;
+
+// //   return (
+// //     <>
+// //     <h1>Healthy Food</h1>
+// //     {emptyMessage}
+// //     {/* {foodItems.length === 0 ? <h3>No items are available.</h3> : null} */}
+// //      <ul className="list-group">
+//       {FoodItems.map((item) => (
+//         <li key={item} className="list-group-item">{item}</li>
+//       ))}
+//       </ul>
+// //      </>
+// //   )
+// // }
+
+// // export default App;
+
+// Props:-
+import FoodItems from "./components/FoodItems";
+
 function App() {
-  //let foodItems = [];
   let foodItems = ["Dal", "Ghee", "Bread", "Milk", "Sprouts"];
 
   let emptyMessage = foodItems.length === 0 ? <h3>No items are available</h3> : null;
@@ -77,13 +101,8 @@ function App() {
     <>
     <h1>Healthy Food</h1>
     {emptyMessage}
-    {/* {foodItems.length === 0 ? <h3>No items are available.</h3> : null} */}
-    <ul className="list-group">
-      {foodItems.map((item) => (
-        <li key={item} className="list-group-item">{item}</li>
-      ))}
-      </ul> 
-    </>
+    <FoodItems  />
+     </>
   )
 }
 
