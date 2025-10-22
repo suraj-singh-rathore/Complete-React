@@ -91,19 +91,20 @@
 
 // Props:-
 import FoodItems from "./components/FoodItems";
+import ErrorMessage from "./components/ErrorMessage";
+import Item from "./components/Item"
+import Item from "./components/Item";
 
 function App() {
-  let foodItems = ["Dal", "Ghee", "Bread", "Milk", "Sprouts"];
-
-  let emptyMessage = foodItems.length === 0 ? <h3>No items are available</h3> : null;
+  //let foodItems = ["Dal", "Ghee", "Bread", "Milk", "Sprouts"];
 
   return (
     <>
-    <h1>Healthy Food</h1>
-    {emptyMessage}
-    <FoodItems  />
-     </>
-  )
+    <ErrorMessage/>
+    <FoodItems/>
+    <Item FoodItem={Item}></Item>
+    </>
+  );
 }
 
 export default App;
