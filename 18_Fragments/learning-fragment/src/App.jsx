@@ -92,16 +92,16 @@
 // Props:-
 import FoodItems from "./components/FoodItems";
 import ErrorMessage from "./components/ErrorMessage";
-import Item from "./components/Item";
 
 function App() {
-  //let foodItems = ["Dal", "Ghee", "Bread", "Milk", "Sprouts"];
+  //let foodItems = [];
+  let foodItems = ["Dal", "Ghee", "Vegetable", "Bread", "Milk", "Sprouts"];
 
   return (
     <>
-    <ErrorMessage/>
-    <FoodItems/>
-    <Item FoodItem={Item}></Item>
+    <h2>Healthy Food</h2>
+    <ErrorMessage items={foodItems}/>
+    <FoodItems items={foodItems}/>
     </>
   );
 }

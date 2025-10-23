@@ -1,9 +1,6 @@
-const ErrorMessage = () => {
+const ErrorMessage = ({ items }) => {
 
-   let foodItems = ["Dal", "Ghee", "Bread", "Milk", "Sprouts"];
-
-    return <> {foodItems.length === 0 && <h3>I am still hungry.</h3>}
-    </>
+    return <>{items.length === 0 && <h3>No food items available.</h3>}</>;
 };
 
 export default ErrorMessage;
