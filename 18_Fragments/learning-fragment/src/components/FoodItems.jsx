@@ -1,3 +1,5 @@
+import Item from "./Item"
+
 const FoodItems = () => {
 
     let FoodItems = ["Dal", "Ghee", "Bread", "Milk", "Sprouts"];
@@ -5,7 +7,7 @@ const FoodItems = () => {
     return(
         <ul className="list-group">
       {FoodItems.map((item) => (
-        <item key={item} FoodItem={item}></item>
+        <Item key={item} FoodItem={item}></Item>
       ))}
       </ul>
     );

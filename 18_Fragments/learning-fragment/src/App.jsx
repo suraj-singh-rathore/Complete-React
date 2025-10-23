@@ -92,7 +92,6 @@
 // Props:-
 import FoodItems from "./components/FoodItems";
 import ErrorMessage from "./components/ErrorMessage";
-import Item from "./components/Item"
 import Item from "./components/Item";
 
 function App() {
