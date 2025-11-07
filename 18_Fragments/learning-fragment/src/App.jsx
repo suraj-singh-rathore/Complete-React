@@ -92,6 +92,7 @@
 // Props:-
 import FoodItems from "./components/FoodItems";
 import ErrorMessage from "./components/ErrorMessage";
+import "./App.css";
 
 function App() {
   //let foodItems = [];
@@ -99,7 +100,7 @@ function App() {
 
   return (
     <>
-    <h2>Healthy Food</h2>
+    <h2 className="heading">Healthy Food</h2>
     <ErrorMessage items={foodItems}/>
     <FoodItems items={foodItems}/>
     </>
