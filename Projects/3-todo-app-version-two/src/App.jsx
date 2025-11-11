@@ -1,18 +1,20 @@
 import AppName from "./Components/AppName";
 import AddToDo from "./Components/AddToDo";
-import ToDoItem1 from "./Components/ToDoItem1";
-import ToDoItem2 from "./Components/ToDoItem2";
 import "./App.css";
+import Todoitems from "./Components/Todoitems";
 
 function App() {
+  const todoitems = [
+    {Name : "Learn React", dueDate : "09/10/2025"},
+    {Name : "Goto College", dueDate : "10/10/2025"},
+    {Name : "play volleyball", dueDate : "11/10/2025"}
+  ];
+
   return (
     <center className="todo-container">
      <AppName />
      <AddToDo />
-     <div className="items-container">
-      <ToDoItem1 />
-      <ToDoItem2 />
-     </div>
+     <Todoitems todoitems={todoitems}></Todoitems>
     </center>
   );
 }
