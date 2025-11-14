@@ -1,6 +1,6 @@
 import Display from "./Components/Display";
 import styles from "./App.module.css";
-import ButtonsConatiner from './Components/ButtonsContainer';
+import ButtonsContainer from './Components/ButtonsContainer';
 
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
   return (
     <div className={styles.calculator}>
       <Display></Display>
-      <ButtonsConatiner />
+      <ButtonsContainer />
     </div>
   );
 }
