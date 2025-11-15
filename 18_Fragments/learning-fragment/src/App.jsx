@@ -92,6 +92,7 @@
 // Props:-
 import FoodItems from "./components/FoodItems";
 import ErrorMessage from "./components/ErrorMessage";
+import Container from "./components/Container";
 import "./App.css";
 
 function App() {
@@ -99,11 +100,11 @@ function App() {
   let foodItems = ["Dal", "Ghee", "Vegetable", "Bread", "Milk", "Sprouts"];
 
   return (
-    <>
-    <h2 className="heading">Healthy Food</h2>
+    <Container>
+    <h1 className="heading">Healthy Food</h1>
     <ErrorMessage items={foodItems}/>
     <FoodItems items={foodItems}/>
-    </>
+    </Container>
   );
 }
 
