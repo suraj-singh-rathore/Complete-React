@@ -1,8 +1,14 @@
+import style from "./item.module.css";
+
 const Item = (props) => {
     let {FoodItem} = props;
 
-    return <li className="list-group-item 
-    my-item"><span className="my-span">{FoodItem}</span></li>;
+    return(
+        <li className="list-group-item 
+        my-item"><span className="my-span">{FoodItem}</span>
+        <button className={style.button}>Buy</button>
+        </li>
+    );
 };
 
 export default Item;
