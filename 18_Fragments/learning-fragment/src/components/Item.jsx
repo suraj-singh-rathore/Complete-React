@@ -6,7 +6,7 @@ const Item = (props) => {
     return(
         <li className="list-group-item 
         my-item"><span className="my-span">{FoodItem}</span>
-        <button className={style.button}>Buy</button>
+        <button className={`${tyle.button} btn-info`}>Buy</button>
         </li>
     );
 };
