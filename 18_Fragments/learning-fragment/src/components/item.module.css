@@ -5,7 +5,8 @@
 .my-span {
     font-weight: 500;
     color: darkgreen;
-    border-color: #000;
-    background-color: #fff;
 }
 
+.button {
+    float: right;
+}
