@@ -99,12 +99,19 @@ import FoodInput from './components/FoodInput';
 function App() {
   //let foodItems = [];
   let foodItems = ["Dal", "Ghee", "Vegetable", "Bread", "Milk", "Sprouts"];
+  let textToShow = "Food Item Entered by user";
+
+  const handleOnChange = (event) => {
+    console.log(event.target.value);
+    textToShow = event.target.value;
+  };
 
   return (
     <Container>
     <h1 className="heading">Healthy Food</h1>
     <ErrorMessage items={foodItems}/>
-    <FoodInput></FoodInput>
+    <FoodInput handleOnChange={handleOnChange}></FoodInput>
+    <p>{textToShow}</p>
     <FoodItems items={foodItems}/>
     </Container>
   );
