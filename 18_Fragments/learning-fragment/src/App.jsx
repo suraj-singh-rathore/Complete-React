@@ -95,15 +95,21 @@ import ErrorMessage from "./components/ErrorMessage";
 import Container from "./components/Container";
 import "./App.css";
 import FoodInput from './components/FoodInput';
+import { useState } from "react";
 
 function App() {
   //let foodItems = [];
   let foodItems = ["Dal", "Ghee", "Vegetable", "Bread", "Milk", "Sprouts"];
-  let textToShow = "Food Item Entered by user";
+
+  let textStateArr = useState("Food Item Entered by user");
+  let textToShow = textStateArr[0];
+  let setTextstate = textStateArr[1];
+  console.log(`Current value of textState:${textToShow}`);
+
 
   const handleOnChange = (event) => {
     console.log(event.target.value);
-    textToShow = event.target.value;
+    setTextstate = (event.target.value);
   };
 
   return (
