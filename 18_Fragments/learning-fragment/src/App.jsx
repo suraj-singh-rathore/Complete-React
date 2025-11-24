@@ -101,15 +101,16 @@ function App() {
   //let foodItems = [];
   let foodItems = ["Dal", "Ghee", "Vegetable", "Bread", "Milk", "Sprouts"];
 
-  let textStateArr = useState("Food Item Entered by user");
-  let textToShow = textStateArr[0];
-  let setTextstate = textStateArr[1];
-  console.log(`Current value of textState:${textToShow}`);
+  // let textStateArr = useState("Food Item Entered by user");
+  // let textToShow = textStateArr[0];
+  // let setTextState = textStateArr[1];
+  // console.log(`Current value of textState:${textToShow}`);
 
+  let [textToShow, setTextState] = useState("Food Item Entered by user");
 
   const handleOnChange = (event) => {
     console.log(event.target.value);
-    setTextstate = (event.target.value);
+    setTextState(event.target.value);
   };
 
   return (
